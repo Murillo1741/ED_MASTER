@@ -70,7 +70,7 @@ gcc primertaller.c -o primertaller
 ./primertaller
 
 ##Créditos
-Autor: Murillo Valencia Diver Andrés
+Autores: Murillo Valencia Diver Andrés, Juan David Ospina Zuñiga
 Universidad del Pacífico
 Materia: Estructura de datos
 Diurno
