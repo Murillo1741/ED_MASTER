@@ -15,3 +15,19 @@ Estudiante estudiantes[N] = {
     {2024104, 4.0},
     {2024105, 3.9}
 };
+
+//Función para mostrar estudiantes aprobados
+
+void mostrarEstudiantesAprobados(Estudiante arr[], int size) {
+    printf("Estudiantes aprobados:\n");
+    for (int i = 0; i < size; i++) {
+        if (arr[i].nota >= 3.0) {
+            printf("Codigo: %d, Nota: %.2f\n", arr[i].codigo, arr[i].nota);
+        }
+    }
+}
+
+int main () {
+    mostrarEstudiantesAprobados(estudiantes, N);
+    return 0;
+}
