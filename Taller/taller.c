@@ -61,15 +61,25 @@ int main() {
                 printf("La nota maxima del curso es: %.2f\n", max);
                 break;
             }
-            case 3:
-                // función recursiva para promedio
-                break;
-            case 4:
-                // función recursiva para ordenar
-                break;
+            case 3: {
+    float suma = sumaNotasRecursiva(estudiantes, N, 0);
+    printf("El promedio del curso es: %.2f\n", suma / N);
+    } 
+ break;
+            case 4: {
+                selectionSortRecursivo(estudiantes, N, 0);
+    printf("Estudiantes ordenados por código:\n");
+    mostrarEstudiantes(estudiantes, N);
+            }
+    break;
             case 5:
-                // función para mostrar todos los estudiantes
-                break;
+            void mostrarEstudiantes(Estudiante arr[], int n) {
+    printf("Codigo\tNota\n");
+    for (int i = 0; i < n; i++) {
+        printf("%d\t%.2f\n", arr[i].codigo, arr[i].nota);
+    }
+}
+    break;
             case 6:
                 printf("Saliendo...\n");
                 break;
